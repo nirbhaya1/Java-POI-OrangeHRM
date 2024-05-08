@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+
+<!-- <listeners>
+        <listener class-name="utility.TestListener" />
+    </listeners>  -->
+<test parallel="classes" thread-count="1" name="MyTest">
+<groups>  
+<run>  
+<include name="SmokeTest"/> 
+</run>  
+</groups>  
+      <classes>
+            <!-- <class name="com.TestScenario.ParallelTest"/> -->
+            <class name="com.TestScenario.OrangeHRMVerifyReportPage"/>
+        </classes>
+    </test>
+</suite>
+
+
